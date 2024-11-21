@@ -1,0 +1,25 @@
+/summon fox
+/summon minecraft:sheep
+/summon minecraft:fox ~ ~ ~ {NoAI:1}
+/time set day
+/summon minecraft:fox ~ ~ ~ {NoAI:1}
+/summon minecraft:chicken
+/summon minecraft:chicken\
+/summon minecraft:chicken
+/execute as @e at @e[type=fox] run summon minecraft:chicken
+/execute as @e at @e[type=fox] run summon fox
+/kill @e[type=!minecraft:player]
+/summon fox ~ ~ ~ {CustomName:"{\"text\":\"jeb_\"}"}
+/execute as @e at @e[type=fox] run summon fox ~ ~ ~ {CustomName:"{\"text\":\"jeb_\"}"}
+/kill @e[type=!minecraft:player]
+/give Dev minecraft:command_block
+/gamerule commandBlockOutput false
+/tp @e[type=fox] Dev
+/give Dev exmaplemod:sphere
+/time set day
+/tp @e[type=fox] Dev
+/setblock ~ ~ ~ exmaplemod:sphere
+/serverpack pop
+/serverpack pop 1
+/serverpack pop 151949516511654184*8498541561
+/give Dev exmaplemod:custom_helmet
